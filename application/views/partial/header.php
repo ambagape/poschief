@@ -33,9 +33,9 @@
     <p id="header1">POSChief <?php echo $this->lang->line("common_pos_software");?> <img src=<?php echo base_url().'images/logo.png' ;?>  align="right" /></p>
 	  
 	    <div id="logstrip"><ul>
-							<li><a href=<?php echo site_url("home"); ?> ><?php echo $this->lang->line("module_home"); ?></a>							
+							<li><a href=<?php echo site_url("home"); ?>><?php echo $this->lang->line("module_home"); ?></a>							
 							</li> 
-							<li><a data-toggle="dropdown" href=""><?php echo $this->lang->line("module_people"); ?></a>
+							<li id="people_btn"><a><?php echo $this->lang->line("module_people"); ?></a>
 							<ul>
 									<li><a href=<?php echo site_url("customers"); ?> ><?php echo $this->lang->line("module_customers"); ?></a>
 									</li>
@@ -45,8 +45,13 @@
 									</li>
 								</ul>
 								</li> 
-                                                        <li><a href="<?php echo site_url("sales"); ?>"><?php echo $this->lang->line("module_sales"); ?></a>
-							<li><a href=""><?php echo $this->lang->line("module_inventory"); ?></a><ul>
+                                                        
+							<li id="inv_btn"><a><?php echo $this->lang->line("module_sales"); ?></a><ul>
+                                                                        
+									<li><a href=<?php echo site_url("sales"); ?>><?php echo $this->lang->line("module_sales_register"); ?></a>
+									</li>
+                                                                        <li><a href=<?php echo site_url("receivings"); ?>><?php echo $this->lang->line("module_receivings"); ?></a>
+									</li>
 									<li><a href=<?php echo site_url("items"); ?>><?php echo $this->lang->line("module_items"); ?></a>
 									</li>
 									<li><a href=<?php echo site_url("item_kits"); ?>><?php echo $this->lang->line("module_item_kits"); ?></a>
@@ -54,17 +59,39 @@
 									<li></span></li>
 									</ul>
 								</li>
-							<li><a href=""><?php echo $this->lang->line("module_settings"); ?></a>
+							<li id="set_btn"><a><?php echo $this->lang->line("module_settings"); ?></a>
 								<ul>
 									<li><a href=<?php echo site_url("giftcards"); ?>><?php echo $this->lang->line("module_giftcards"); ?></a>
 									</li>
 									<li><a href=<?php echo site_url("config"); ?>><?php echo $this->lang->line("module_config"); ?></a>
 									</li>
+                                                                        <li><a href=<?php echo site_url("reports"); ?>><?php echo $this->lang->line("module_reports"); ?></a></li>
 									</ul>
-							</li>
+							</li>						
 							
-							<li><a href=<?php echo site_url("reports"); ?>><?php echo $this->lang->line("module_reports"); ?></a></li>
 							<li><a href=<?php echo site_url("help"); ?>><?php echo $this->lang->line("module_help"); ?></a>					</li>
 	    </ul><font><?php echo $this->lang->line('common_welcome')." $user_info->first_name $user_info->last_name! |"; ?><?php echo anchor("home/logout",$this->lang->line("common_logout")); ?> </font>		</div>				
 	  
 		<div id="mainArea">
+                    
+                    <script>
+                        $(document).ready(function(){
+                            $("#logstrip li li a").hide();
+                            $("div#logstrip").mouseout(function(){
+                                $("#logstrip li li a").hide();
+                            });
+                            $("#people_btn").mouseover(function(){
+                                $("#logstrip li li a").hide();
+                                $("li#people_btn a").show();                                
+                            });
+                            $("#inv_btn").mouseover(function(){
+                                $("#logstrip li li a").hide();
+                                $("li#inv_btn a").show(); 
+                            });
+                            $("#set_btn").mouseover(function(){
+                                $("#logstrip li li a").hide();
+                                $("li#set_btn a").show(); 
+                            });
+                        } );
+                        
+                    </script>

@@ -9,11 +9,13 @@
 	width:100px;
 	text-align:left;
 	line-height:2.3;
+        color:black;
 }
 
 .field_row label.wide 
 {
 	width:150px;
+        
 }
 
 label.required
@@ -134,6 +136,7 @@ label.required
 	background-color:#e1ffdd;
 	border:1px solid #2ca71c;
 	font-weight:bold;
+        color: black;
 }
 
 input

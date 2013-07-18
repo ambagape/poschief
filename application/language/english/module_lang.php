@@ -3,9 +3,9 @@ $lang['module_home']='Home';
 
 $lang['module_people']='People';
 
-$lang['module_inventory']='Inventory';
+$lang['module_sales']='Sales';
 
-$lang['module_settings']='Settings';
+$lang['module_settings']='Options';
 
 $lang['module_help']='Help';
 $lang['module_help_desc']='Get support from trained professionals';
@@ -19,7 +19,7 @@ $lang['module_suppliers_desc']='Add, Update, Delete, and Search suppliers';
 $lang['module_employees']='Employees';
 $lang['module_employees_desc']='Add, Update, Delete, and Search employees';
 
-$lang['module_sales']='Sales';
+$lang['module_sales_register']='Sales Register';
 $lang['module_sales_desc']='Process sales and returns';
 
 $lang['module_reports']='Reports';

@@ -56,37 +56,33 @@ padding-left:15px;
 #logstrip li {
 display:inline;
 text-align:left;
-font-weight:bold;
 font-size:14px;
 padding-left:5px;
 }
 
 #logstrip li a {
-	color:#FFFFFF;
+	color:#FFFF00;
 	text-decoration:none;
 }
 #logstrip li ul{
 display:none;
 } 
 
-#logstrip li:hover ul {
+#logstrip li ul {
 	display:block;
 	position:absolute;
 	margin-left:60px;
 	padding:0;
-        font-weight:bolder;
 }
-#logstrip li:hover li{
-    font-weight:bolder;
+#logstrip li li{
     float:none;
 }
-#logstrip li:hover li a {
-	font-weight:bolder;
+#logstrip li li a {
 	font-size:14px;
+        color:#FFFFFF;
 }
 #logstrip li li a:hover {
 	color:#FFFF00;
-    font-weight: bolder;
 }
 
 #logstrip  font {
@@ -103,11 +99,11 @@ top:0px;
 
 #logstrip  font a {
 text-decoration:underline;
-color:#FFFFFF;
+color:#FFFF00;
 }
 #logstrip  font a:hover {
 text-decoration:underline;
-color:#FFFF00;
+color:#FFFFFF;
 }
 
 #mainArea{
@@ -133,7 +129,7 @@ box-shadow:3px 3px 5px 6px #000000;
 .lefticon{
 position:relative;
 float:left;
-width:300px;
+width:30%;
 background:#FFFFFF;
 height:50px;
 border-radius:8px;
@@ -157,7 +153,7 @@ padding-right:5px;
 }
 .middleicon{
 position:relative;
-width:300px;
+width:30%;
 background:#FFFFFF;
 height:50px;
 float:right;
@@ -173,7 +169,7 @@ padding-right:5px;
 }
 .righticon{
 position:relative;
-width:270px;
+width:30%;
 background:#FFFFFF;
 height:50px;
 float:right;

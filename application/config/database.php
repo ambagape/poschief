@@ -49,8 +49,8 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'userpos';
-$db['default']['password'] = 'userpospass';
+$db['default']['username'] = 'posuser';
+$db['default']['password'] = 'posuserpass';
 $db['default']['database'] = 'pos';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = 'ospos_';

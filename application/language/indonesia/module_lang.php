@@ -3,7 +3,7 @@ $lang['module_home']='Beranda';
 
 $lang['module_people']='People';
 
-$lang['module_inventory']='Inventory';
+$lang['module_sales']='Penjualan';
 
 $lang['module_settings']='Pengaturan';
 
@@ -19,7 +19,7 @@ $lang['module_suppliers_desc']='Tambah, Update, Hapus, dan Cari pemasok';
 $lang['module_employees']='Karyawan';
 $lang['module_employees_desc']='Tambah, Update, Hapus, dan Cari karyawan';
 
-$lang['module_sales']='Penjualan';
+$lang['module_sales_register']='Sales Register';
 $lang['module_sales_desc']='Proses penjualan dan retur';
 
 $lang['module_reports']='Laporan';
